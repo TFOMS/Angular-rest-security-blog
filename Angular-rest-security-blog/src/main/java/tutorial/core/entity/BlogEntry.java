@@ -1,23 +1,37 @@
 package tutorial.core.entity;
 
+/**
+ * Created by Chris on 6/19/14.
+ */
 public class BlogEntry {
-	
-	private long id;
-	private String title;
 
-	public String getTitle() {
-		return title;
-	}
+    private Long id;
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    private String title;
 
-	public long getId() {
-		return id;
-	}
+    private Blog blog;
 
-	public void setId(long id) {
-		this.id = id;
-	}
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Blog getBlog() {
+        return blog;
+    }
+
+    public void setBlog(Blog blog) {
+        this.blog = blog;
+    }
 }
