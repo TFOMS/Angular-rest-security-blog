@@ -1,5 +1,6 @@
 package tutorial.core.services.exceptions;
 
+import tutorial.core.models.entities.Blog;
 
 /**
  * Created by Chris on 6/30/14.

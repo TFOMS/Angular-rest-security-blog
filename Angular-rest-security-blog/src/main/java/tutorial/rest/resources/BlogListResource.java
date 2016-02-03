@@ -1,6 +1,7 @@
 package tutorial.rest.resources;
 
 import org.springframework.hateoas.ResourceSupport;
+import tutorial.core.models.entities.Blog;
 
 import java.util.ArrayList;
 import java.util.List;

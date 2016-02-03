@@ -33,11 +33,12 @@
                 <entry key="hibernate.show_sql" value="true"/>
             </map>
         </property>
-        <property name="packagesToScan" value="tutorial.core.entity"/>
+        <property name="packagesToScan" value="tutorial.core.models.entities"/>
     </bean>
 
     <tx:annotation-driven/>
 
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"/>
 
+    <context:component-scan base-package="tutorial.core.services.impl"/>
 </beans>

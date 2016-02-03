@@ -1,11 +1,11 @@
 package tutorial.rest.mvc;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
-import tutorial.core.entity.BlogEntry;
+import tutorial.core.models.entities.BlogEntry;
 import tutorial.core.services.BlogEntryService;
 import tutorial.rest.resources.BlogEntryResource;
 import tutorial.rest.resources.asm.BlogEntryResourceAsm;
@@ -18,6 +18,7 @@ import tutorial.rest.resources.asm.BlogEntryResourceAsm;
 public class BlogEntryController {
     private BlogEntryService service;
 
+    @Autowired
     public BlogEntryController(BlogEntryService service)
     {
         this.service = service;

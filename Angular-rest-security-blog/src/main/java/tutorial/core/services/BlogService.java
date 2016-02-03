@@ -1,8 +1,8 @@
 package tutorial.core.services;
 
-import tutorial.core.entity.Blog;
-import tutorial.core.entity.BlogEntry;
+import tutorial.core.models.entities.Blog;
 import tutorial.core.services.util.BlogEntryList;
+import tutorial.core.models.entities.BlogEntry;
 import tutorial.core.services.util.BlogList;
 
 import java.util.List;
